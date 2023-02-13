@@ -1,4 +1,7 @@
-import { useState } from "react";
-// const Navbar=()=>{
-//     const [isMobileMenu]
-// }
+import React from "react";
+
+const Navbar = () => {
+  return <div></div>;
+};
+
+export default Navbar;

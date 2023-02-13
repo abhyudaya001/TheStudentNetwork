@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+.login-page{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/background.svg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form-parent{
+    background-image: url(../assets/form-p.jpg);
+    height: 80%;
+    width: 80%;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.f-left{
+    flex: 3;
+    margin: 20px;
+    background-color: rgb(21,29,40);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+}
+.f-right{
+    overflow: hidden;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 2rem;
+    text-align: center;
+    height: 100%;
+}
+.logo{
+    height: 30%;
+    width: 30%;  
+}
+.l-name{
+    font-size: 50px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: white;
+}
+.welcome-text{
+    color: white;
+    margin-top: 50px;
+    font-family: Montserrat;
+}
+.desc{
+    color: white;
+    font-family: Montserrat;
+    font-size: smaller;
+}
+.toggle-buttons{
+    display: flex;
+    position: relative;
+}
+.login{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(21,29,40);
+    color: rgb(252, 252, 252);
+    padding:1rem;
+    border-color: rgb(30, 45, 65);
+    border-bottom-style: solid;
+}
+.login-clicked{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(21,29,40);
+    color: #E43C17;
+    padding:1rem;
+    border-color: #E43C17;
+    border-bottom-style: solid;
+}
+.register{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(21,29,40);
+    color: rgb(252, 252, 252);
+    padding:1rem;
+    border-color: rgb(30, 45, 65);
+    border-bottom-style: solid;
+}
+.register-clicked{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(21,29,40);
+    color: #E43C17;
+    padding:1rem;
+    border-color: #E43C17;
+    border-bottom-style: solid;
+}
+.form{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.ip1 {
+    border-radius: 25px;
+    border: 2px solid #E43C17;
+    background-color: rgb(21,29,40);
+    color: aliceblue;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+    flex: 1;  
+    width: 30%; 
+}
+.ip2{
+    border-radius: 25px;
+    border: 2px solid #E43C17;
+    background-color: rgb(21,29,40);
+    color: aliceblue;
+    padding: 20px; 
+    width: 200px;
+    height: 15px; 
+    flex: 1;   
+    margin-left: 3rem;
+    width: 40%;
+}
+.name{
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
