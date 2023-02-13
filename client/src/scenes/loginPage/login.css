@@ -30,14 +30,16 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    border-radius: 0.5rem;
-    height: 80%;
-    width: 80%;
+    border-radius: 1rem;
+    height: 90%;
+    margin-left: 3rem;
+    /* margin-right: 10rem; */
     overflow: hidden;
 }
 .f-right{
     overflow: hidden;
-    flex: 2;
+    flex: 3;
+    padding-right: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,24 +50,37 @@
     height: 100%;
 }
 .logo{
-    height: 30%;
-    width: 30%;  
+    height: 40%;
+    width: 40%;
+    filter:drop-shadow(3px 5px 9px rgb(0, 0, 0));
+    
+}
+.logo:hover{
+    height: 40%;
+    width: 40%;
+    filter:drop-shadow(15px 17px 19px rgb(0, 0, 0));
 }
 .l-name{
-    font-size: 50px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 80px;
     font-family: Montserrat;
     font-weight: bold;
-    color: white;
+    color: rgb(189, 187, 187);
+    filter:drop-shadow(3px 5px 9px rgb(0, 0, 0));
 }
 .welcome-text{
-    color: white;
-    margin-top: 50px;
+    color: rgb(176, 171, 171);
+    margin-top: 80px;
     font-family: Montserrat;
+    font-weight: bolder;
+    filter:drop-shadow(3px 5px 9px rgb(0, 0, 0));
 }
 .desc{
-    color: white;
+    color: rgb(199, 188, 188);
     font-family: Montserrat;
     font-size: smaller;
+    font-weight: 800;
 }
 .toggle-buttons{
     display: flex;
@@ -74,11 +89,13 @@
 .login{
     flex: 1;
     text-align: center;
-    background-color: rgb(21,29,40);
+    background-color: rgb(21, 27, 36);
     color: rgb(252, 252, 252);
     padding:1rem;
     border-color: rgb(30, 45, 65);
     border-bottom-style: solid;
+    cursor: pointer;
+    font-family: Montserrat;
 }
 .login-clicked{
     flex: 1;
@@ -88,15 +105,19 @@
     padding:1rem;
     border-color: #E43C17;
     border-bottom-style: solid;
+    cursor: pointer;
+    font-family: Montserrat;
 }
 .register{
     flex: 1;
     text-align: center;
-    background-color: rgb(21,29,40);
+    background-color: rgb(21, 27, 36);
     color: rgb(252, 252, 252);
     padding:1rem;
     border-color: rgb(30, 45, 65);
     border-bottom-style: solid;
+    cursor: pointer;
+    font-family: Montserrat;
 }
 .register-clicked{
     flex: 1;
@@ -106,42 +127,82 @@
     padding:1rem;
     border-color: #E43C17;
     border-bottom-style: solid;
+    cursor: pointer;
+    font-family: Montserrat;
 }
 .form{
     height: 100%;
     width: 100%;
 }
-.box{
+/* .box{
     display: flex;
     flex-direction: column;
-}
-.ip1 {
+} */
+/* .ip1 {
     border-radius: 25px;
     border: 2px solid #E43C17;
     background-color: rgb(21,29,40);
     color: aliceblue;
     padding: 20px; 
-    width: 200px;
     height: 15px; 
     flex: 1;  
-    width: 30%; 
-}
-.ip2{
+    width: 40%; 
+} */
+/* .ip2{
     border-radius: 25px;
     border: 2px solid #E43C17;
     background-color: rgb(21,29,40);
     color: aliceblue;
     padding: 20px; 
-    width: 200px;
-    height: 15px; 
+    height: 10px; 
     flex: 1;   
     margin-left: 3rem;
-    width: 40%;
-}
+    width: 42%;
+} */
 .name{
     display: flex;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    gap: 1rem;
 }
+.f-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+input {
+    font-family: Montserrat;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #E43C17;
+    background-color: rgb(21,29,40);
+    color: aliceblue;
+    padding: 20px; 
+ }
+ .btn{
+    font-family: Montserrat;
+    background-color:#E43C17;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 2rem;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+ }
+ .login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 10vh;
+    padding-bottom: 2rem;
+ }

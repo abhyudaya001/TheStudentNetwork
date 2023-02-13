@@ -7,7 +7,7 @@ import { Button, TextField } from "@mui/material";
 import { setLogin } from "../../state/index.js";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import "./index.css";
+import "./login.css";
 import { orange } from "@mui/material/colors";
 
 const registerSchema = yup.object().shape({
@@ -125,52 +125,130 @@ const Form = () => {
           resetForm,
         }) => (
           <form onSubmit={handleSubmit}>
-            {isRegister && (
-              <>
-                <div className="name">
+            <div className="f-fields">
+              {isRegister && (
+                <>
+                  <div className="name">
+                    <input
+                      type="text"
+                      label="First Name"
+                      onBlur={handleBlur}
+                      onChange={handleChange}
+                      value={values.firstName}
+                      name="firstName"
+                      placeholder="First Name"
+                      error={
+                        Boolean(touched.firstName) && Boolean(errors.firstName)
+                      }
+                      helperText={touched.firstName && errors.firstName}
+                    />
+                    <input
+                      label="Last Name"
+                      onBlur={handleBlur}
+                      onChange={handleChange}
+                      value={values.lastName}
+                      name="lastName"
+                      placeholder="Last Name"
+                      error={
+                        Boolean(touched.lastName) && Boolean(errors.lastName)
+                      }
+                      helperText={touched.lastName && errors.lastName}
+                      sx={{ gridColumn: "span 2" }}
+                    />
+                  </div>
                   <input
-                    type="text"
-                    className="ip1"
-                    label="First Name"
+                    label="College"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    value={values.firstName}
-                    name="firstName"
-                    placeholder="First Name"
-                    error={
-                      Boolean(touched.firstName) && Boolean(errors.firstName)
-                    }
-                    helperText={touched.firstName && errors.firstName}
+                    value={values.college}
+                    name="college"
+                    placeholder="College Name"
+                    error={Boolean(touched.college) && Boolean(errors.college)}
+                    helperText={touched.college && errors.college}
+                    sx={{ gridColumn: "span 4" }}
                   />
                   <input
-                    label="Last Name"
-                    className="ip1"
+                    label="Graduation Year"
                     onBlur={handleBlur}
                     onChange={handleChange}
-                    value={values.lastName}
-                    name="lastName"
-                    placeholder="Last Name"
+                    placeholder="Graduation Year"
+                    value={values.graduation_year}
+                    name="graduation_year"
                     error={
-                      Boolean(touched.lastName) && Boolean(errors.lastName)
+                      Boolean(touched.graduation_year) &&
+                      Boolean(errors.graduation_year)
                     }
-                    helperText={touched.lastName && errors.lastName}
-                    sx={{ gridColumn: "span 2" }}
+                    helperText={
+                      touched.graduation_year && errors.graduation_year
+                    }
+                  />
+                  <input
+                    label="Skills"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.tags}
+                    name="tags"
+                    placeholder="Skills"
+                    error={Boolean(touched.tags) && Boolean(errors.tags)}
+                    helperText={touched.tags && errors.tags}
+                    sx={{ gridColumn: "span 4" }}
+                  />
+                  <input
+                    label="Email"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.email}
+                    name="email"
+                    placeholder="Email"
+                    error={Boolean(touched.email) && Boolean(errors.email)}
+                    helperText={touched.email && errors.email}
+                  />
+                  <input
+                    label="Password"
+                    type="password"
+                    placeholder="Password"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.password}
+                    name="password"
+                    error={
+                      Boolean(touched.password) && Boolean(errors.password)
+                    }
+                    helperText={touched.password && errors.password}
+                  />
+                </>
+              )}
+              {isLogin && (
+                <div className="login-form">
+                  <input
+                    label="Email"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.email}
+                    name="email"
+                    placeholder="Email"
+                    error={Boolean(touched.email) && Boolean(errors.email)}
+                    helperText={touched.email && errors.email}
+                  />
+                  <input
+                    label="Password"
+                    type="password"
+                    placeholder="Password"
+                    onBlur={handleBlur}
+                    onChange={handleChange}
+                    value={values.password}
+                    name="password"
+                    error={
+                      Boolean(touched.password) && Boolean(errors.password)
+                    }
+                    helperText={touched.password && errors.password}
                   />
                 </div>
-                <input
-                  label="College"
-                  className="ip2"
-                  onBlur={handleBlur}
-                  onChange={handleChange}
-                  value={values.college}
-                  name="college"
-                  placeholder="College Name"
-                  error={Boolean(touched.college) && Boolean(errors.college)}
-                  helperText={touched.college && errors.college}
-                  sx={{ gridColumn: "span 4" }}
-                />
-              </>
-            )}
+              )}
+              <button className="btn" type="submit">
+                {isLogin ? "LOGIN" : "REGISTER"}
+              </button>
+            </div>
           </form>
         )}
       </Formik>

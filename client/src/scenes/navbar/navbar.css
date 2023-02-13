@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+.nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    overflow: visible;
+}
+.left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    float: s;
+}
+.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+.n-logo{
+    cursor: pointer;
+    padding-top: 1rem;
+    height: 9rem;
+    width: 7rem;
+    filter:drop-shadow(3px 5px 9px rgb(0, 0, 0));
+}
+.nav-icons{
+    cursor: pointer;
+    padding: 2.1rem;
+    height: 6rem;
+}
+.nav-icons:hover{
+    cursor: pointer;
+    padding: 2rem;
+    height: 6rem;
+    filter:drop-shadow(3px 5px 9px rgb(0, 0, 0));
+}
+
+.logo-name{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Libre Bodoni', serif;
+}

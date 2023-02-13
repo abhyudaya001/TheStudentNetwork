@@ -1,9 +1,19 @@
 <svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_8_7)">
 <rect width="1440" height="1024" fill="#0A0639"/>
-<path d="M0 0H462.5C741 227 1239 187.5 1440 497V1024H0V0Z" fill="#E43C17" style="mix-blend-mode:lighten"/>
+<path d="M1882 126C1882 402.142 1658.14 626 1382 626C1105.86 626 882 402.142 882 126C882 -150.142 1105.86 -374 1382 -374C1658.14 -374 1882 -150.142 1882 126Z" fill="url(#paint0_radial_8_7)"/>
+<path d="M521 877C521 1153.14 297.142 1377 21 1377C-255.142 1377 -479 1153.14 -479 877C-479 600.858 -255.142 377 21 377C297.142 377 521 600.858 521 877Z" fill="url(#paint1_radial_8_7)"/>
 </g>
+<path d="M0 0H462.5C741 227 1239 187.5 1440 497V1024H0V0Z" fill="#E43C17" style="mix-blend-mode:lighten"/>
 <defs>
+<radialGradient id="paint0_radial_8_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1382 126) rotate(90) scale(500)">
+<stop stop-color="#1A0EA4"/>
+<stop offset="1" stop-color="#141045" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_8_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21 877) rotate(90) scale(500)">
+<stop stop-color="#F45D5D"/>
+<stop offset="1" stop-color="#141045" stop-opacity="0"/>
+</radialGradient>
 <clipPath id="clip0_8_7">
 <rect width="1440" height="1024" fill="white"/>
 </clipPath>
