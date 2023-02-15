@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.post-containers{
+    justify-content: center;
+    /* text-align: center; */
+    display: flex;
+    
+    flex-direction: column;
+    width: 560px;
+    /* border: 2px solid; */
+    margin: 2rem;
+    
+    /* height: 634px; */
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.pc-UserName{
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 15px;
+}
+.pc-college{
+    font-family: 'Zilla Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
+}
+.pc-user-details{
+    display: flex;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.pc-ud-container{
+    padding-left: 15px;
+}
+.pc-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    padding: 36px;
+}
+.pc-description{
+    /* position: absolute; */
+    position: relative;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000000;
+    padding: 36px;
+}
+.desc-div pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.interaction-board{
+    padding: 36px;
+    display: flex;
+}
+.i-left{
+    flex:2;
+    float: left;
+}
+.i-right{
+    padding-left: 2rem;
+}
+.i-like{
+    padding-right: 4rem;
+}
+.i-comment{
+
+}

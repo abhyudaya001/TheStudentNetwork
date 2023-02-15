@@ -6,6 +6,12 @@
     justify-content: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     overflow: visible;
 }
@@ -33,12 +39,12 @@
     cursor: pointer;
     padding: 2.1rem;
     height: 6rem;
+    transition: all 0.3s ease-in-out;
 }
 .nav-icons:hover{
     cursor: pointer;
-    padding: 2rem;
+    padding: 1.5rem;
     height: 6rem;
-    filter:drop-shadow(3px 5px 9px rgb(0, 0, 0));
 }
 
 .logo-name{

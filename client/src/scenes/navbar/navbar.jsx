@@ -22,6 +22,7 @@ const Navbar = () => {
         <img className="nav-icons" src={Notification} alt="notification" />
         <img className="nav-icons" src={Setting} alt="setting" />
       </div>
+      <p>{user.firstName}</p>
     </div>
   );
 };
