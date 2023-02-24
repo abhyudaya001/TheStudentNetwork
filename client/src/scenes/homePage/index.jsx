@@ -12,11 +12,15 @@ const Homepage = () => {
     <div>
       <Navbar />
       <div className="posts-widgets">
-        <UserWidget />
-        <div>
-          <Posts userId={_id} />
+        <div className="user-wid">
+          <UserWidget userId={_id} />
         </div>
-        <Friends />
+        <div className="post-wid">
+          <Posts userId={_id} tags={"hello"} />
+        </div>
+        <div className="friend-wid">
+          <Friends />
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,13 @@
 .posts-widgets{
     margin-top: 6rem;
+    display: flex;
+}
+.user-wid{
+    flex: 1;
+}
+.post-wid{
+    flex:1;
+}
+.friend-wid{
+    flex: 1;
 }
