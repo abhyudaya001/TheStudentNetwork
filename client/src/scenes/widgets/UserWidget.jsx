@@ -34,7 +34,7 @@ const UserWidget = ({ userId }) => {
           <div className="general-info-name">
             {firstName} {lastName}
           </div>
-          <div className="general-info-friends">{friends.length}</div>
+          <div className="general-info-friends">Friends: {friends.length}</div>
         </div>
         <img src={ProfileSetting} alt="account-setting" />
       </div>

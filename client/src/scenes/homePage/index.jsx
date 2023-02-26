@@ -16,7 +16,7 @@ const Homepage = () => {
           <UserWidget userId={_id} />
         </div>
         <div className="post-wid">
-          <Posts userId={_id} tags={"hello"} />
+          <Posts userId={_id} tags={"java , android"} />
         </div>
         <div className="friend-wid">
           <Friends />

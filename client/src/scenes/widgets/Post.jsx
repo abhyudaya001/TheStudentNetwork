@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Post.css";
 import SampleU from "../assets/sample-user.svg";
 import Like from "../assets/like.svg";
@@ -15,6 +15,7 @@ const Post = ({
   likes,
   comments,
 }) => {
+  const [isComments, setIsComments] = useState(false);
   return (
     <div className="post-containers">
       <div className="pc-user-details">
@@ -31,12 +32,26 @@ const Post = ({
       <div className="interaction-board">
         <div className="i-left">
           <img src={Like} alt="" className="i-like" />
-          <img src={Comment} alt="" className="i-comment" />
+          <img
+            src={Comment}
+            onClick={() => setIsComments(!isComments)}
+            alt=""
+            className="i-comment"
+          />
         </div>
         <div className="i-right">
           <img src={Share} alt="" className="i-share" />
         </div>
       </div>
+      {isComments && (
+        <div className="comments-container">
+          {comments.length > 0 &&
+            comments.map((item) => {
+              <div className="comments">{item}</div>;
+            })}
+          {comments.length === 0 && <div>No Comments</div>}
+        </div>
+      )}
     </div>
   );
 };

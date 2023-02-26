@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "../../state";
 import Logo from "../assets/logo.png";
+import SampleUser from "../assets/sampleuser2.svg";
 import "./navbar.css";
 import Home from "../assets/home.svg";
 import Message from "../assets/message.svg";
@@ -21,8 +22,8 @@ const Navbar = () => {
         <img className="nav-icons" src={Message} alt="message" />
         <img className="nav-icons" src={Notification} alt="notification" />
         <img className="nav-icons" src={Setting} alt="setting" />
+        <img src={SampleUser} alt="" />
       </div>
-      <p>{user.firstName}</p>
     </div>
   );
 };

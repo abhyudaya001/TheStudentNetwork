@@ -4,26 +4,24 @@ import { setPosts } from "../../state";
 import Post from "./Post";
 
 const Posts = ({ userId, isProfile = false, tags }) => {
-  // let p = "task";
-  // console.log(p);
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts);
   const token = useSelector((state) => state.token);
 
-  // const getPosts = async () => {
-  //   const response = await fetch(
-  //     `http://127.0.0.1:5000/recommend?tag=${[tags]}`,
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         Authorization: `Bearer ${token}`,
-  //         "Content-Type": "application/json",
-  //       },
-  //     }
-  //   );
-  //   const data = await response.json();
-  //   dispatch(setPosts({ posts: data }));
-  // };
+  const getPosts = async () => {
+    const response = await fetch(
+      `http://127.0.0.1:5000/recommend?tag=${[tags]}`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    dispatch(setPosts({ posts: data }));
+  };
 
   const getUserPosts = async () => {
     const response = await fetch(
@@ -42,11 +40,11 @@ const Posts = ({ userId, isProfile = false, tags }) => {
     if (isProfile) {
       getUserPosts();
     } else {
-      // getPosts();
-      // const intervalId = setInterval(() => {
-      //   dispatch(getPosts());
-      // }, 15000); // Fetch posts every 5 seconds
-      // return () => clearInterval(intervalId);
+      getPosts();
+      const intervalId = setInterval(() => {
+        dispatch(getPosts());
+      }, 15000); // Fetch posts every 5 seconds
+      return () => clearInterval(intervalId);
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
